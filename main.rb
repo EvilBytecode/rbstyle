@@ -1,9 +1,9 @@
 ######################################################## < BEGGINING OF DYNAMIC COLORS > ########################################################
-require 'rbstyle'
+require_relative "library/static_colors"
+require_relative "library/dynamic_colors"
+
 DynamicColors.test_all_dynamic_colors
 
-## 1 line print
-DynamicColors.animated_colors(:PURPLE_TO_BLUE, 12, "Lorem Impsum Test Text Sigma")
 
 ## mutliple lines print
 DynamicColors.animated_colors(:PURPLE_TO_BLUE, 19, "
@@ -14,7 +14,8 @@ WOW
 TEST
 SIGMS SIGMA SIGMS ISGMA
 ")
-
+## 1 line print
+DynamicColors.animated_colors(:PURPLE_TO_BLUE, 12, "Lorem Impsum Test Text Sigma")
 ######################################################## < END OF DYNAMIC COLORS > ########################################################
 
 ######################################################## < BEGGINING OF STATIC COLORS > ########################################################
